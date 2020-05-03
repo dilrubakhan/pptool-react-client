@@ -1,18 +1,29 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import ProjectItems from './projects/ProjectItems';
+import ProjectItem from './projects/ProjectItem';
 
 class Dashboard extends Component {
-    static propTypes = {
-        prop: PropTypes
-    }
+
 
     render() {
         return (   
-            <div>
-               <h1 className = "alert alert-warning">Dashboard</h1> 
-               <ProjectItems/> 
-            </div>         
+            <div className="projects">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h1 className="display-4 text-center">Projects</h1>
+                            <br />
+                            <a href="ProjectForm.html" className="btn btn-lg btn-info">
+                            Create a Project
+                            </a>
+                            <br />
+                            <hr />
+                       <ProjectItem/>
+                </div>
+            </div>
+        </div>
+    </div>
+   
         );
     }
 }
