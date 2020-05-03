@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import ProjectItems from './projects/ProjectItems';
 
 class Dashboard extends Component {
     static propTypes = {
@@ -7,11 +8,12 @@ class Dashboard extends Component {
     }
 
     render() {
-        return (
+        return (   
             <div>
-               <h1>Hello World</h1> 
-            </div>
-        )
+               <h1>Dashboard</h1> 
+               <ProjectItems/> 
+            </div>         
+        );
     }
 }
 export default Dashboard;
